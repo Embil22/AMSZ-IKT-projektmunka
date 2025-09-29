@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pénznem átváltó</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="kozep">
+    <div class="container">
+        <h1>Válasszon valutát az átváltáshoz:</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Adjon meg egy mennyiséget: </label>
+            <input type="number" name="quantity" min="1" max="10" placeholder="0">
+            <label for="currency">Válasszon pénznemet: </label>
+            <select name="currency" id="currency">
+              
+            </select>
+            <button class="btn" type="submit">Átváltás</button>
+            <img src="logo.PNG" alt="Logo" width="200" height="200" class="img">
+        </form>
+        <div class="output">
+            <h2>Itt vannak az átváltott értékei:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pénznem</th>
+                        <th>Pénznem jele</th>
+                        <th>Érték</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+    <script>
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

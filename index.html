@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="HU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pénznem átváltó</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="kozep">
+    <div class="container">
+        <h1>Válasszon valutát az átváltáshoz:</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Adjon meg egy mennyiséget: </label>
+            <input type="number" name="quantity" min="1" max="10" placeholder="0" class="zold">
+            <label for="currency">Válasszon pénznemet: </label>
+            <select name="currency" id="currency" class="zold">
+                <option value="pénznem" selected disabled>Pénznem</option>
+                <option value="ADA">Cardano</option>
+                <option value="AED">Arab dirham</option>
+                <option value="AFN">Afgán afghani</option>
+                <option value="ALL">Albán Lek</option>
+                <option value="AMD">Örmény dram</option>
+                <option value="ANG">Holland antilláki forint</option>
+                <option value="AOA">Angolai kwanza</option>
+                <option value="ARB">Arbitrum</option>
+                <option value="ARS">Argentin peso</option>
+                <option value="AUD">Ausztrál dollár</option>
+                <option value="AVAX">Avalanche</option>
+                <option value="AWG">Arubai florin</option>
+                <option value="AZN">Azerbajdzsáni manat</option>
+                <option value="BAM">Bosznia-hercegovinai konvertibilis márka</option>
+                <option value="BBD">Bajan dollár</option>
+                <option value="BDT">Bangladesi taka</option>
+                <option value="BGN">Bolgár új leva</option>
+                <option value="BHD">Bahreini dinár</option>
+                <option value="BIF">Burundi frank</option>
+                <option value="BMD">Bermudai dollár</option>
+                <option value="BNB">Binance coin</option>
+                <option value="BND">Brunei dollár</option>
+                <option value="BOB">Bolíviai boliviano</option>
+                <option value="BRL">Brazil real</option>
+                <option value="BSD">Bahamai dollár</option>
+                <option value="BTC">Bitcoin</option>
+                <option value="BTN">Bhutáni ngultrum</option>
+                <option value="BWP">Botswanai pula</option>
+                <option value="BYN">Belaruszi Rubel</option>
+                <option value="BYR">Etiópiai birr</option>
+                <option value="BZD">Belizei dollár</option>
+                <option value="CAD">Kanadai dollár</option>
+                <option value="CDF">Kongói frank</option>
+                <option value="CHF">Svájci frank</option>
+                <option value="CLF">Chilei unidades de fomento</option>
+                <option value="CLP">Chilei peso</option>
+                <option value="CNY">Kínai jüan</option>
+                <option value="COP">Kolumbiai peso</option>
+                <option value="CRC">Costa Rica-i colon</option>
+                <option value="CUC">Kubai konvertibilis peso</option>
+                <option value="CVE">Zöld-foki escudo</option>
+                <option value="CZK">Cseh korona</option>
+                <option value="DAI">DAI</option>
+                <option value="DJF">Dzsibuti frank</option>
+                <option value="DKK">Dán korona</option>
+                <option value="DOP">Dominikai peso</option>
+                <option value="DOT">Polkadot</option>
+                <option value="DZD">Algériai dínár</option>
+                <option value="EGP">Egyiptomi font</option>
+                <option value="ERN">Eritreai Nakfa</option>
+                <option value="ETB">Etiópiai birr</option>
+                <option value="ETH">Ethereum</option>
+                <option value="EUR">Euró</option>
+                <option value="FJD">Fidzsi dollár</option>
+                <option value="FKP">Falkland-szigeteki font</option>
+                <option value="GBP">Angol font</option>
+                <option value="GEL">Gelato</option>
+                <option value="GGP">Guernseyi font</option>
+                <option value="GHS">Ghánai cedi</option>
+                <option value="GIP">Gibraltári font</option>
+                <option value="GMD">Gambiai dalasi</option>
+                <option value="GNF">Guineai frank</option>
+                <option value="GTQ">Guatemalai quetzal</option>
+                <option value="GYD">Guyanai dollár</option>
+                <option value="HKD">Hongkongi dollár</option>
+                <option value="HNL">Hondurasi lempira</option>
+                <option value="HRK">Horvát Kuna</option>
+                <option value="HTG">Haiti gourde</option>
+                <option value="HUF">Magyar Forint</option>
+                <option value="IDR">Indonéz rúpia</option>
+                <option value="ILS">Izraeli új sékel</option>
+                <option value="IMP">Man-szigeti font</option>
+                <option value="INR">Indiai rúpia</option>
+                <option value="IQD">Iraki dínár</option>
+                <option value="IRR">Iráni riál</option>
+                <option value="ISK">Izlandi korona</option>
+                <option value="JEP">Jersey-i font</option>
+                <option value="JMD">Jamaicai dollár</option>
+                <option value="JOD">Jordániai dínár</option>
+                <option value="JPY">Japán yen</option>
+                <option value="KES">Kenyai shilling</option>
+                <option value="KGS">Kirgiz szom</option>
+                <option value="KHR">Kambodzsai riel</option>
+                <option value="KMF">Comore-i frank</option>
+                <option value="KPW">Észak-koreai won</option>
+                <option value="KRW">Dél-koreai won</option>
+                <option value="KWD">Kuvaiti dínár</option>
+                <option value="KYD">Kajmán-szigeteki dollár</option>
+                <option value="KZT">Kazahsztáni tenge</option>
+                <option value="LAK">Laoszi kip</option>
+                <option value="LBP">Libanoni líra</option>
+                <option value="LKR">Srí Lanka-i rúpia</option>
+                <option value="LRD">Libériai dollár</option>
+                <option value="LSL">Lesothoi loti</option>
+                <option value="LTC">Litecoin</option>
+                <option value="LTL">Litván litas</option>
+                <option value="LVL">Lett lat</option>
+                <option value="LYD">Líbiai dínár</option>
+                <option value="MAD">Marokkói dirham</option>
+                <option value="MATIC">Polygon</option>
+                <option value="MDL">Moldován lei</option>
+                <option value="MGA">Madagaszkári ariary</option>
+                <option value="MKD">Macedón dénár</option>
+                <option value="MMK">Mianmari kjat</option>
+                <option value="MNT">Mongol tugrik</option>
+                <option value="MOP">Makaói pataca</option>
+                <option value="MRO">Mauritániai Ouguiya</option>
+                <option value="MUR">Mauritiusi rúpia</option>
+                <option value="MVR">Maldív-szigeteki rúfia</option>
+                <option value="MWK">Malawi kwacha</option>
+                <option value="MXN">Mexikói peso</option>
+                <option value="MYR">Malajziai ringgit</option>
+                <option value="MZN">Mozambiki metical</option>
+                <option value="NAD">Namíbiai dollár</option>
+                <option value="NGN">Nigériai naira</option>
+                <option value="NIO">Nicaraguan cordoba</option>
+                <option value="NOK">Norvég korona</option>
+                <option value="NPR">Nepáli rúpia</option>
+                <option value="NZD">Új-zélandi dollár</option>
+                <option value="OMR">Ománi riál</option>
+                <option value="OP">Optimism</option>
+                <option value="PAB">Panamai balboa</option>
+                <option value="PEN">Perui új sol</option>
+                <option value="PGK">Pápua új-guineai kina</option>
+                <option value="PHP">Fülöp-szigeteki peso</option>
+                <option value="PKR">Pakisztáni rúpia</option>
+                <option value="PLN">Lengyel zloty</option>
+                <option value="PYG">Paraguayi guarani</option>
+                <option value="QAR">Katari riál</option>
+                <option value="RON">Román lei</option>
+                <option value="RSD">Szerb dinár</option>
+                <option value="RUB">Orosz rubel</option>
+                <option value="RWF">Ruandai frank</option>
+                <option value="SAR">Szaúd-Arábiai riál</option>
+                <option value="SBD">Salamon-szigeteki dollár</option>
+                <option value="SCR">Seychelle-szigeteki rúpia</option>
+                <option value="SDG">Szudáni font</option>
+                <option value="SEK">Svéd korona</option>
+                <option value="SGD">Szingapúri dollár</option>
+                <option value="SHP">Szent Ilona-i font</option>
+                <option value="SLL">Sierra Leonean Leones</option>
+                <option value="SOL">Solana</option>
+                <option value="SOS">Szomáli shilling</option>
+                <option value="SRD">Szerb dinár</option>
+                <option value="STD">Sao Tomean Dobras</option>
+                <option value="SVC">Salvadori colón</option>
+                <option value="SYP">Szíriai font</option>
+                <option value="SZL">Szvázi lilangeni</option>
+                <option value="THB">Thai baht</option>
+                <option value="TJS">Tádzsikisztáni somoni</option>
+                <option value="TMT">Türkmén manat</option>
+                <option value="TND">Tunéziai dínár</option>
+                <option value="TOP">Tongai pa'anga</option>
+                <option value="TRX">Tron</option>
+                <option value="TRY">Török líra</option>
+                <option value="TTD">Trinidad és Tobago-i dollár</option>
+                <option value="TWD">Új tatvani dollár</option>
+                <option value="TZS">Tanzániai shilling</option>
+                <option value="UAH">Ukrán hrivnya</option>
+                <option value="UGX">Ugandai shilling</option>
+                <option value="USD">Amerikai dollár</option>
+                <option value="USDC">USDC</option>
+                <option value="USDT">Tether</option>
+                <option value="UYU">Uruguayi peso</option>
+                <option value="UZS">Üzbég szom</option>
+                <option value="VEF">Venezuelai bolívar</option>
+                <option value="VND">Vietnámi dong</option>
+                <option value="VUV">Vanuatui vatu</option>
+                <option value="WST">Szamoai tala</option>
+                <option value="XAF">Közép-afrikai valutaközösségi frank</option>
+                <option value="XAG">Uncia ezüst</option>
+                <option value="XAU">Uncia arany</option>
+                <option value="XCD">Kelet-karibi dollár</option>
+                <option value="XCG">Karibi forint</option>
+                <option value="XDR">Special Drawing Rights</option>
+                <option value="XOF">Nyugat-afrikai Valutaközösségi Frank</option>
+                <option value="XPD">Palládium uncia</option>
+                <option value="XPF">Csendes-óceáni valutaközösségi frank</option>
+                <option value="XPT">Platina Uncia</option>
+                <option value="XRP">XRP</option>
+                <option value="YER">Jemeni riál</option>
+                <option value="ZAR">Dél-afrikai rand</option>
+                <option value="ZMK">Zambiai kwacha</option>
+                <option value="ZMG">Zimbabwei arany Dollár</option>
+            </select>
+            <br>
+            <button class="btn" type="submit">Átváltás</button>
+            <img src="logo.PNG" alt="Logo" width="200" height="200" class="img">
+        </form>
+        <div class="output">
+            <h2>Itt vannak az átváltott értékei:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pénznem</th>
+                        <th>Pénznem jele</th>
+                        <th>Érték</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+    <script>
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

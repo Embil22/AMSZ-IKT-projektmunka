@@ -1,1 +1,0 @@
-# AMSZ-IKT-projektmunka
